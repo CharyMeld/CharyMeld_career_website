@@ -1,0 +1,18 @@
+{
+  "name": "myphpproject",
+  "version": "1.0.0",
+  "description": "My PHP Project with Tailwind CSS",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.4.2"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.5",
+    "tailwindcss": "^4.1.3"
+  },
+  "scripts": {
+    "build": "tailwindcss -i ./path/to/styles.css -o ./public/css/tailwind.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

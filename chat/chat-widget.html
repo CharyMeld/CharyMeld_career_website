@@ -1,0 +1,21 @@
+<!-- Chat icon -->
+<div id="chat-icon" class="fixed bottom-5 right-5 cursor-pointer z-50">
+  <img src="/myphpproject/assets/chat-icon.png" alt="Chat" class="w-12 h-12">
+</div>
+
+<!-- Chat Box -->
+<div id="chat-box" class="hidden fixed bottom-20 right-5 w-80 bg-white border border-gray-300 shadow-lg p-4 rounded z-50">
+  <div id="chat-status" class="text-sm text-green-600 mb-2"></div>
+  <div id="chat-messages" class="h-40 overflow-y-auto text-sm mb-2 border p-2"></div>
+  <input type="text" id="chat-username" placeholder="Your name (optional)" class="w-full mb-1 border px-2 py-1 text-sm rounded">
+  <textarea id="chat-message" placeholder="Type your message..." class="w-full h-16 border p-2 text-sm rounded"></textarea>
+  <button id="send-message" class="w-full bg-blue-500 text-white mt-2 py-1 px-4 rounded hover:bg-blue-600 text-sm">Send</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#chat-icon').click(function () {
+      $('#chat-box').toggleClass('hidden');
+    });
+  });
+</script>

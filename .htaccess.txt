@@ -1,0 +1,12 @@
+Options -Indexes
+
+RewriteEngine On
+RewriteBase /myphpproject/
+
+# Skip existing files and folders
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Route everything to index.php?page=...
+RewriteRule ^public/(.*)$ public/$1 [L]
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]

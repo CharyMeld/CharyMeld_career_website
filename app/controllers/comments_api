@@ -1,0 +1,23 @@
+<?php
+header("Content-Type: application/json");
+require_once "../../config/db.php"; // Ensure this points to your database connection
+
+$blogId = $_GET['blog_id'] ?? 0;
+if ($blogId == 0) {
+    echo json_encode(["status" => "error", "message" => "Invalid Blog ID"]);
+    exit;
+}
+
+$sql = "SELECT name, text FROM comments WHERE blog_id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $blogId);
+$stmt->execute();
+$result = $stmt->get_result();
+
+$comments = [];
+while ($row = $result->fetch_assoc()) {
+    $comments[] = $row;
+}
+
+echo json_encode(["status" => "success", "comments" => $comments]);
+?>

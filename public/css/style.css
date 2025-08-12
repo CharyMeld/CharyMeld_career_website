@@ -1,0 +1,235 @@
+
+.filter-form {
+    background: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input Fields */
+.filter-form .form-select {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Button Styles */
+.btn {
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+
+.btn-success:hover {
+    background: #218838;
+    transform: scale(1.05);
+}
+
+.btn-secondary:hover {
+    background: #6c757d;
+    transform: scale(1.05);
+}
+
+/* Smooth hover effects */
+.form-select:hover, .btn:hover {
+    cursor: pointer;
+}
+
+/* General Layout */
+.container-fluid {
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh;
+    background: #1a1a2e; /* Dark navy background */
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar .nav-link {
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.sidebar .nav-link:hover {
+    background: #16213e; /* Slightly lighter on hover */
+    transform: translateX(5px);
+}
+
+.sidebar .nav-link.text-danger {
+    background: #e94560;
+    color: white !important;
+    font-weight: bold;
+}
+
+.sidebar .nav-link.text-danger:hover {
+    background: #ff4757;
+}
+
+/* Sidebar Toggle Button */
+.sidebar-toggle {
+    display: none; /* Hidden on larger screens */
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #0f3460;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+    .sidebar {
+        position: fixed;
+        left: -250px;
+        width: 250px;
+        top: 0;
+        bottom: 0;
+        z-index: 1000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .sidebar-toggle {
+        display: block;
+    }
+}
+.container {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .header-flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #333;
+        padding: 15px;
+        color: white;
+    }
+    h1 {
+        margin: 0;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 15px;
+        display: flex;
+    }
+    nav ul li {
+        margin-right: 20px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    .tab-content {
+        display: none;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ddd;
+        margin-top: 10px;
+    }
+    .logo-upload {
+        display: flex;
+        align-items: center;
+    }
+    .logo-upload input[type="file"] {
+        display: none;
+    }
+    .logo-upload img {
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        border-radius: 50%;
+        border: 2px solid white;
+    }
+.footer {
+        background-color: #222;
+        color: #fff;
+        padding: 10px 0;
+        font-family: Arial, sans-serif;
+    }
+    .footer-container {
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #444;
+    }
+    .footer-col {
+        flex: 1;
+        padding: 15px;
+        min-width: 200px;
+    }
+    .footer-col-wide {
+        flex: 2;
+    }
+    .footer-col h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #f4b400;
+    }
+    .footer-col ul {
+        list-style: none;
+        padding: 0;
+    }
+    .footer-col ul li {
+        margin: 8px 0;
+    }
+    .footer-col ul li a {
+        text-decoration: none;
+        color: #ccc;
+        transition: color 0.3s;
+    }
+    .footer-col ul li a:hover {
+        color: #f4b400;
+    }
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .social-links a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #fff;
+        transition: transform 0.3s, color 0.3s;
+    }
+    .social-links a:hover {
+        color: #f4b400;
+        transform: scale(1.2);
+    }
+    .footer-bottom {
+        margin-top: 20px;
+        font-size: 14px;
+        color: #aaa;
+    }
