@@ -1,64 +1,51 @@
-TeamO Digital Solutions Website
-A Staff Database Management System designed to help monitor and track staff attendance, daily work reports, progress, and challenges. The system supports different user roles including Admin, Supervisor, and Employee for effective management.
+# TeamO Digital Solutions Website
 
-Features
-Staff attendance tracking (sign-in/sign-out)
+## Overview
+This is a PHP-based Staff Database Management System designed to help monitor and track staff attendance, daily work reports, progress, and challenges. The system supports different user roles, including Admin, Supervisor, and Employee, allowing tailored access and management capabilities.
 
-Daily work report submissions including progress and challenges
+## Features
+- Staff attendance tracking (sign-in and sign-out)
+- Daily work report submission and tracking
+- Role-based access control (Admin, Supervisor, Employee)
+- User management and role assignments
+- Responsive UI built with HTML, CSS, and Bootstrap
+- MySQL database integration
 
-Role-based user management (Admin, Supervisor, Employee)
+## Technologies Used
+- PHP
+- MySQL (via XAMPP)
+- HTML, CSS, Bootstrap
+- JavaScript (where applicable)
 
-Secure login and access control
+## Installation Instructions
 
-Responsive UI built with Bootstrap
+### Prerequisites
+- XAMPP installed on your local machine.  
+  Download from [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html) and install it.
 
-MySQL database for data storage
+### Setup
+1. Clone or download this repository into your local XAMPP `htdocs` directory.
+2. Start Apache and MySQL from the XAMPP control panel.
+3. Create a MySQL database for the project (e.g., `teamodigital_db`).
+4. Import the provided database SQL file (if any) into your MySQL database using phpMyAdmin or the MySQL command line.
+5. Update the database connection settings in the project configuration files (`config.php` or similar) with your local database credentials.
+6. Access the project in your browser at `http://localhost/your-project-folder/`.
 
-Technologies Used
-PHP
+## Usage
+- Log in with user credentials depending on your role (Admin, Supervisor, or Employee).
+- Admins can manage users and oversee all reports and attendance.
+- Supervisors can monitor their teams' attendance and reports.
+- Employees can submit daily work reports and record attendance.
 
-MySQL (via XAMPP)
+## Contributing
+Contributions are welcome! Feel free to submit a pull request or open an issue.
 
-HTML, CSS
+## License
+Specify your license here (e.g., MIT License).
 
-Bootstrap
+---
 
-Installation Instructions
-Install XAMPP: Download and install XAMPP from https://www.apachefriends.org/index.html
+**Contact**  
+For questions or support, reach out to TeamO Digital Solutions.
 
-Clone this repository to your local machine:
 
-bash
-Copy
-Edit
-git clone https://github.com/CharyMeld/CharyMeld_career_website.git
-Copy the project files to your XAMPP htdocs folder (e.g., /opt/lampp/htdocs or C:\xampp\htdocs)
-
-Create a MySQL database:
-
-Open phpMyAdmin via http://localhost/phpmyadmin
-
-Create a new database (e.g., teamodigital)
-
-Import the database schema:
-
-Use the provided .sql file in the project (if available) or run migrations
-
-Configure the database connection in your PHP config file (e.g., config.php) with your MySQL credentials
-
-Start Apache and MySQL services via XAMPP control panel
-
-Access the app at: http://localhost/myphpproject (adjust based on your folder name)
-
-Usage
-Login with your user credentials (default Admin login if available)
-
-Admin can manage users and monitor reports
-
-Supervisors and employees submit attendance and daily work reports
-
-Contributing
-Feel free to fork the project and submit pull requests for improvements or bug fixes.
-
-License
-This project is open-source and available under the MIT License.
